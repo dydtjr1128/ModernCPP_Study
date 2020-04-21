@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Memory", "Memory\Memory.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Unique_lock", "Unique_lock\Unique_lock.vcxproj", "{01462F7A-0D78-4833-80F2-73CEF0629A5E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ref", "ref\ref.vcxproj", "{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{01462F7A-0D78-4833-80F2-73CEF0629A5E}.Release|x64.Build.0 = Release|x64
 		{01462F7A-0D78-4833-80F2-73CEF0629A5E}.Release|x86.ActiveCfg = Release|Win32
 		{01462F7A-0D78-4833-80F2-73CEF0629A5E}.Release|x86.Build.0 = Release|Win32
+		{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}.Debug|x64.ActiveCfg = Debug|x64
+		{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}.Debug|x64.Build.0 = Debug|x64
+		{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}.Debug|x86.ActiveCfg = Debug|Win32
+		{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}.Debug|x86.Build.0 = Debug|Win32
+		{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}.Release|x64.ActiveCfg = Release|x64
+		{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}.Release|x64.Build.0 = Release|x64
+		{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}.Release|x86.ActiveCfg = Release|Win32
+		{44E2DB4A-0EC9-4D9F-BA99-FE7CD7752240}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

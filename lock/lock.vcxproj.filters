@@ -15,14 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Unique_lock.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="AddExample.cpp">
-=======
-    <ClCompile Include="Unique_lock_example.cpp">
->>>>>>> Update Code
+    <ClCompile Include="Lock.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

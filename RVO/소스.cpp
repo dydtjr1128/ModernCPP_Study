@@ -1,5 +1,5 @@
 #include <iostream>
-
+//함수에서 객체를 반환할 때는 참조자 반환을 사용하지 말고 RVO를 사용하려고 노력하자.
 class Foo {
 public:
 	Foo() {
@@ -18,7 +18,7 @@ public:
 	int num;
 };
 
-Foo MakeFoo(int n) {
+Foo MakeFoo(int n) {// NRVO  최적화 옵션 /O1 부터 실행
 	Foo foo;
 	foo.num = n;
 	return foo;

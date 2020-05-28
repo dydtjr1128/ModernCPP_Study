@@ -4,7 +4,7 @@
 
 int main() {
 
-	int n = 10000000;
+	int n = 5000000;
 	std::string a = "have";
 	std::string b = "a";
 	std::string c = "good";
@@ -13,7 +13,7 @@ int main() {
 	volatile unsigned int count = 0;
 	
 	auto s = std::chrono::system_clock::now();
-	for (int i = 0; i < n; ++i) { // 2등
+	for (int i = 0; i < n; ++i) { // 3등
 		std::ostringstream os;
 		os << a << " " << b << " " << c << " " << d << "\r\n";
 		std::string t = os.str();
@@ -21,6 +21,17 @@ int main() {
 	}
 	std::chrono::duration<double> second = std::chrono::system_clock::now() - s;
 	std::cout << "ostringstream : " << second.count() << " second, count : " << count << std::endl;
+
+	count = 0;
+	s = std::chrono::system_clock::now();
+	for (int i = 0; i < n; ++i) { // 3등
+		std::stringstream ss;
+		ss << a << " " << b << " " << c << " " << d << "\r\n";
+		std::string t = ss.str();
+		count += t.size();
+	}
+	second = std::chrono::system_clock::now() - s;
+	std::cout << "stringstream : " << second.count() << " second, count : " << count << std::endl;
 
 	count = 0;
 	s = std::chrono::system_clock::now();
@@ -35,7 +46,7 @@ int main() {
 
 	count = 0;
 	s = std::chrono::system_clock::now();
-	for (int i = 0; i < n; ++i) { // 3등
+	for (int i = 0; i < n; ++i) { // 2등 <- release 기준임
 		std::string t = a + " " + b + " " + c + " " + d + "\r\n";
 		count += t.size();
 	}

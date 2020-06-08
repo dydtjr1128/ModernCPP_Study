@@ -35,6 +35,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "string vs ostringstream", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stringstream", "stringstream\stringstream.vcxproj", "{BF3048F2-95A6-4B1D-B6E0-3AB1C079A442}"
 EndProject
+<<<<<<< HEAD
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mutex", "Mutex\Mutex.vcxproj", "{C32B1DCF-8D06-42B1-A5B9-56964AFA6D84}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lock", "lock\lock.vcxproj", "{6F91EA58-533C-486B-8DEC-4162378D2883}"
@@ -42,12 +43,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lock_guard", "lock_guard\lock_guard.vcxproj", "{BDCFE56E-1D8B-4451-A996-B54E341A68FB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Unique_lock_deadlock", "Unique_lock_deadlock\Unique_lock_deadlock.vcxproj", "{DEC97BBB-E14E-4D7A-A170-0F28F8BF8984}"
-EndProject
+=======
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "thread", "thread\thread.vcxproj", "{9D9E44CB-97F1-4DBC-AD8B-85CA69512EAD}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "REST", "REST\REST.vcxproj", "{098E1C36-0D76-4AC7-AF24-829259CF83EF}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UniversialReference", "UniversialReference\UniversialReference.vcxproj", "{6022D172-F5C4-4B6F-A450-B933FE5447F1}"
+>>>>>>> Update modern c++ study example
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +183,7 @@ Global
 		{BF3048F2-95A6-4B1D-B6E0-3AB1C079A442}.Release|x64.Build.0 = Release|x64
 		{BF3048F2-95A6-4B1D-B6E0-3AB1C079A442}.Release|x86.ActiveCfg = Release|Win32
 		{BF3048F2-95A6-4B1D-B6E0-3AB1C079A442}.Release|x86.Build.0 = Release|Win32
+<<<<<<< HEAD
 		{C32B1DCF-8D06-42B1-A5B9-56964AFA6D84}.Debug|x64.ActiveCfg = Debug|x64
 		{C32B1DCF-8D06-42B1-A5B9-56964AFA6D84}.Debug|x64.Build.0 = Debug|x64
 		{C32B1DCF-8D06-42B1-A5B9-56964AFA6D84}.Debug|x86.ActiveCfg = Debug|Win32
@@ -204,6 +203,7 @@ Global
 		{BDCFE56E-1D8B-4451-A996-B54E341A68FB}.Debug|x64.ActiveCfg = Debug|x64
 		{BDCFE56E-1D8B-4451-A996-B54E341A68FB}.Debug|x64.Build.0 = Debug|x64
 		{BDCFE56E-1D8B-4451-A996-B54E341A68FB}.Debug|x86.ActiveCfg = Debug|Win32
+		{BDCFE56E-1D8B-4451-A996-B54E341A68FB}.Debug|x86.Build.0 = Debug|Win32
 		{BDCFE56E-1D8B-4451-A996-B54E341A68FB}.Release|x64.ActiveCfg = Release|x64
 		{BDCFE56E-1D8B-4451-A996-B54E341A68FB}.Release|x64.Build.0 = Release|x64
 		{BDCFE56E-1D8B-4451-A996-B54E341A68FB}.Release|x86.ActiveCfg = Release|Win32
@@ -216,6 +216,7 @@ Global
 		{DEC97BBB-E14E-4D7A-A170-0F28F8BF8984}.Release|x64.Build.0 = Release|x64
 		{DEC97BBB-E14E-4D7A-A170-0F28F8BF8984}.Release|x86.ActiveCfg = Release|Win32
 		{DEC97BBB-E14E-4D7A-A170-0F28F8BF8984}.Release|x86.Build.0 = Release|Win32
+=======
 		{9D9E44CB-97F1-4DBC-AD8B-85CA69512EAD}.Debug|x64.ActiveCfg = Debug|x64
 		{9D9E44CB-97F1-4DBC-AD8B-85CA69512EAD}.Debug|x64.Build.0 = Debug|x64
 		{9D9E44CB-97F1-4DBC-AD8B-85CA69512EAD}.Debug|x86.ActiveCfg = Debug|Win32
@@ -224,22 +225,7 @@ Global
 		{9D9E44CB-97F1-4DBC-AD8B-85CA69512EAD}.Release|x64.Build.0 = Release|x64
 		{9D9E44CB-97F1-4DBC-AD8B-85CA69512EAD}.Release|x86.ActiveCfg = Release|Win32
 		{9D9E44CB-97F1-4DBC-AD8B-85CA69512EAD}.Release|x86.Build.0 = Release|Win32
-		{098E1C36-0D76-4AC7-AF24-829259CF83EF}.Debug|x64.ActiveCfg = Debug|x64
-		{098E1C36-0D76-4AC7-AF24-829259CF83EF}.Debug|x64.Build.0 = Debug|x64
-		{098E1C36-0D76-4AC7-AF24-829259CF83EF}.Debug|x86.ActiveCfg = Debug|Win32
-		{098E1C36-0D76-4AC7-AF24-829259CF83EF}.Debug|x86.Build.0 = Debug|Win32
-		{098E1C36-0D76-4AC7-AF24-829259CF83EF}.Release|x64.ActiveCfg = Release|x64
-		{098E1C36-0D76-4AC7-AF24-829259CF83EF}.Release|x64.Build.0 = Release|x64
-		{098E1C36-0D76-4AC7-AF24-829259CF83EF}.Release|x86.ActiveCfg = Release|Win32
-		{098E1C36-0D76-4AC7-AF24-829259CF83EF}.Release|x86.Build.0 = Release|Win32
-		{6022D172-F5C4-4B6F-A450-B933FE5447F1}.Debug|x64.ActiveCfg = Debug|x64
-		{6022D172-F5C4-4B6F-A450-B933FE5447F1}.Debug|x64.Build.0 = Debug|x64
-		{6022D172-F5C4-4B6F-A450-B933FE5447F1}.Debug|x86.ActiveCfg = Debug|Win32
-		{6022D172-F5C4-4B6F-A450-B933FE5447F1}.Debug|x86.Build.0 = Debug|Win32
-		{6022D172-F5C4-4B6F-A450-B933FE5447F1}.Release|x64.ActiveCfg = Release|x64
-		{6022D172-F5C4-4B6F-A450-B933FE5447F1}.Release|x64.Build.0 = Release|x64
-		{6022D172-F5C4-4B6F-A450-B933FE5447F1}.Release|x86.ActiveCfg = Release|Win32
-		{6022D172-F5C4-4B6F-A450-B933FE5447F1}.Release|x86.Build.0 = Release|Win32
+>>>>>>> Update modern c++ study example
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

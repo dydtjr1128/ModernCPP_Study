@@ -24,18 +24,6 @@ void FileReader::TestReceive() {
 		readStream.close();
 
 	}
-
-
-	if (readStream.is_open()) {
-		while (std::getline(readStream, line)) {
-			std::cout << line << std::endl;
-		}
-		readStream.close();
-
-	}
-	else {
-		std::cout << "f" << std::endl;
-	}
 }
 
 int main()

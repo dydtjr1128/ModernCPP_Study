@@ -6,7 +6,7 @@
 #include <unordered_map>
 
 int main() {
-	int size = 10000;
+	constexpr int size = 100'000;
 	std::string c;
 	std::vector<std::string> vector;
 	std::unordered_map<std::string, std::string> map;
@@ -15,7 +15,7 @@ int main() {
 	std::string findVal;
 	std::ostringstream oss;
 	for (int i = 0; i < size - 1; ++i) {
-		oss << "random" << ((rand() % 10000) + 1);		
+		oss << "random" << ((rand() % 10000) + 1);
 		vector.push_back(oss.str());
 		map.emplace(oss.str(), oss.str());
 		oss.str("");
@@ -27,7 +27,7 @@ int main() {
 	findVal = oss.str();
 	oss.str("");
 	oss.clear();
-	
+
 
 	auto s = std::chrono::system_clock::now();
 	std::cout << "vector loop : ";

@@ -61,6 +61,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vector", "vector\vector.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "String-Unicode,Multibyte", "String-Unicode,Multibyte\String-Unicode,Multibyte.vcxproj", "{B215A143-7E2C-47EF-8DA0-5F7305F7253C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Virtual", "Virtual\Virtual.vcxproj", "{5F94BF25-1078-4D31-A599-C6849CD78B19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -300,6 +302,14 @@ Global
 		{B215A143-7E2C-47EF-8DA0-5F7305F7253C}.Release|x64.Build.0 = Release|x64
 		{B215A143-7E2C-47EF-8DA0-5F7305F7253C}.Release|x86.ActiveCfg = Release|Win32
 		{B215A143-7E2C-47EF-8DA0-5F7305F7253C}.Release|x86.Build.0 = Release|Win32
+		{5F94BF25-1078-4D31-A599-C6849CD78B19}.Debug|x64.ActiveCfg = Debug|x64
+		{5F94BF25-1078-4D31-A599-C6849CD78B19}.Debug|x64.Build.0 = Debug|x64
+		{5F94BF25-1078-4D31-A599-C6849CD78B19}.Debug|x86.ActiveCfg = Debug|Win32
+		{5F94BF25-1078-4D31-A599-C6849CD78B19}.Debug|x86.Build.0 = Debug|Win32
+		{5F94BF25-1078-4D31-A599-C6849CD78B19}.Release|x64.ActiveCfg = Release|x64
+		{5F94BF25-1078-4D31-A599-C6849CD78B19}.Release|x64.Build.0 = Release|x64
+		{5F94BF25-1078-4D31-A599-C6849CD78B19}.Release|x86.ActiveCfg = Release|Win32
+		{5F94BF25-1078-4D31-A599-C6849CD78B19}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

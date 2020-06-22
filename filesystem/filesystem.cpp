@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include<fstream>
 #include <string>
+#include <filesystem>
 
 class FileReader {
 public:
@@ -26,8 +27,8 @@ void FileReader::TestReceive() {
 	}
 }
 
-int main()
-{
-	FileReader reader;
-	reader.TestReceive();
+int main() {
+	std::filesystem::create_directories("sandbox/1/2/a"); // create directories recursively
+	//std::filesystem::create_directory("sandbox2/1/2/b"); // error
+	
 }

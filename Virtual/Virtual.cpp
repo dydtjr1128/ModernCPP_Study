@@ -1,32 +1,47 @@
-﻿// Virtual.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
-//
-
-#include <iostream>
+﻿#include <iostream>
 
 class Root {
-    virtual bool print() = 0;
+public:
+	virtual bool print() = 0;
 };
 
 class Base : public Root {
-public:    
-    bool print() override = 0;
-    virtual bool print() const = 0;
+public:
+	bool print() override = 0; // from Root
+	virtual bool print() const = 0; // from Base
 };
 
 class SubA : public Base {
 public:
-    bool print() override {
-        std::cout << "SubA::print() non-const" << std::endl;
-        return true;
-    }
-    bool print() const override {
-        std::cout << "SubA::print() const" << std::endl;
-        return true;
-    }
+	bool print() override {
+		std::cout << "SubA::print() non-const, from Root" << std::endl;
+		return true;
+	}
+	bool print() const override {
+		std::cout << "SubA::print() const, from Base" << std::endl;
+		return true;
+	}
+	void test() {
+		tt = 10;
+	}
+private:
+	int tt;
 };
 
-int main() {    
-    Base* b = new SubA();    
+int main() {
+	Base* b = new SubA();
+	Root* c = new SubA();
+	SubA* d = new SubA();
 
-    b->print();
+	b->print(); // SubA::print() non-const, from Root
+	c->print(); // SubA::print() non-const, from Root
+	d->print(); // SubA::print() non-const, from Root
+
+	const Base* e = new SubA(); // SubA::print() const, from Base
+	e->print();
+	
+	const SubA* f = new SubA();
+	f->print();	
+
+	
 }

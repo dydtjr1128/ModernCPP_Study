@@ -9,6 +9,7 @@
 
 
 #include <string.h>
+#include <fstream>
 
 using namespace std::string_literals; // enables s-suffix for std::string literals
 
@@ -165,12 +166,14 @@ int main() {
 	constexpr int length = 12;
 
 	std::cout << "================ std::string ================" << std::endl;
+	std::ofstream writeFile;
 
+	writeFile.open("./log.txt", std::ios_base::app);	
+	
 	for (size_t i = 0; i < length; i++) {
-
-		std::cout << to_utf88(texts[i]) << std::endl;
+		std::cout << texts[i] << std::endl;
 	}
-
+	
 	/*std::wcout << L"================ std::wstring ================" << std::endl;
 
 	
@@ -181,6 +184,9 @@ int main() {
 
 	for (size_t i = 0; i < length; i++) {
 		std::cout << u8texts[i] << std::endl;
+		if (writeFile.is_open()) {
+			writeFile.write((u8texts[i] + "\n").c_str(), u8texts[i].length()+1);
+		}
 	}
 
 	std::cout << "================ utf-16 ================" << std::endl;
@@ -188,10 +194,10 @@ int main() {
 	std::wstring_convert<std::codecvt_utf8_utf16<char16_t>, char16_t> codecvt;
 	for (size_t i = 0; i < length; i++) {
 		std::cout << codecvt.to_bytes(u16texts[i]) << std::endl;		
-	}
-	std::wstring temp = L"hello";
-	std::wcout << temp;
-	
+	}	
+	std::string temp = "안녕하세요";
+	std::u16string tt(temp.c_str);
+	std::cout << codecvt.to_bytes(tt) << std::endl;
 
-
+	writeFile.close();
 }
